@@ -29,10 +29,6 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.apply {
-            buttonFirst.setOnClickListener {
-                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-            }
-
             buttonCalculate.setOnClickListener {
                 operation()
             }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#349A7D"
+    android:background="@color/teal_700"
     tools:context=".FirstFragment">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/dolar_change"
+        android:text="@string/title_app"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,21 +22,19 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="285dp"
-        android:layout_height="133dp"
+        android:layout_height="160dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_dolar_change"
-        app:srcCompat="@drawable/image_dollar_icon"
-        tools:src="@tools:sample/avatars" />
+        app:srcCompat="@drawable/mercado" />
 
     <TextView
         android:id="@+id/textView_value_dolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Valor del Dolar"
+        android:text="Valor del Divisa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -47,9 +46,8 @@
         android:layout_marginTop="24dp"
         android:cursorVisible="true"
         android:ems="10"
-        android:hint="Dolar"
+        android:hint="Valor"
         android:inputType="number|numberDecimal"
-        android:numeric="decimal"
         app:layout_constraintEnd_toEndOf="@+id/textView_value_dolar"
         app:layout_constraintStart_toStartOf="@+id/textView_value_dolar"
         app:layout_constraintTop_toBottomOf="@+id/textView_value_dolar" />
@@ -59,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Cantidad de Dolares"
+        android:text="Cantidad de Moneda"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +72,6 @@
         android:ems="10"
         android:hint="Cantidad"
         android:inputType="number|numberDecimal"
-        android:numeric="decimal"
         app:layout_constraintEnd_toEndOf="@+id/textView_value_account"
         app:layout_constraintStart_toStartOf="@+id/textView_value_account"
         app:layout_constraintTop_toBottomOf="@+id/textView_value_account" />
@@ -90,26 +87,16 @@
         app:layout_constraintTop_toBottomOf="@+id/input_account" />
 
     <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="24dp"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/button_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
         android:layout_marginBottom="128dp"
+        android:background="@drawable/button"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

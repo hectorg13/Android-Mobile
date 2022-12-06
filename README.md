@@ -1,5 +1,5 @@
 # Android Return
-Here I´m practicing the last technologies that I have worked in HMI Models.
+There is last technologies that I have worked in HMI Models.
 
 I created a App named Currency Converter.
 Nothing special.
